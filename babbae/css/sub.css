@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+@keyframes free_ani {
+    0% {transform: translateX(0); opacity: 1;}
+    50% {transform:translateX(-150px); opacity:1; }
+    100% {transform:translateX(-200px); opacity:0; }
+    }
+
+    @keyframes money_ani {
+        0% {transform: translate(0,0); opacity: 1;}
+       90% {transform:translate(-55px,-100px); opacity:1; }
+        100% {transform:translate(-55px,-100px); opacity:0; }
+        }
+        @keyframes money_ani2 {
+            0% {transform: translate(0,0); opacity: 1;}
+            90% {transform:translate(55px,-100px); opacity:1; }
+            100% {transform:translate(55px,-100px); opacity:0; }
+            }
+
+body {font-family: 'Noto Sans KR', sans-serif; color:#666;}
+
+#header {height:160px; position: relative; }
+
+#header .inner {position:relative; z-index: 999;}
+#header form {position:absolute; right:0px; top:15px;  border:1px solid #999;    }
+#header input[type="text"] {width:150px;  height:35px; padding:5px 0px; font-size: 16px; }
+#header input[type="submit"] {font-size: 0px;  background: url("../images/magnifier.png") no-repeat 10px center ; background-size:50%; width:60px; height:45px; cursor: pointer;  }
+#header .join {position:absolute; right:230px; top:25px; }
+#header .join li {float: left; }
+#header .join li a {color:#666; padding:10px 20px; }
+#header h1 {position: absolute; left:0; top:55px; width:120px; height: 80px;}
+#header h1 img {width:100%; }
+#header .gnb {position:absolute; right:0px; top:90px;  }
+#header .gnb > li {float:left; }
+#header .gnb > li:hover > a {color:#a0bf30; }
+#header .gnb > li > a {display:block ; padding:20px 45px; font-size: 20px; color:#666; font-weight: 700; }
+#header .depth2 > li {z-index: 999;}
+#header .depth2 > li > a { display:block ; padding:5px 18px;  font-size: 16px; color:#666; }
+#header .depth2 > li:hover > a {color:#d9751e}
+#header .depth2_bg {position:absolute; top:160px; width:100%; height:250px;  background: #f2b705; z-index: 99;}
+
+#brand_story {margin-top: 100px; height: 800px; text-align: center; }
+#brand_story h2 {font-size: 50px; color:#666; font-weight: 700; margin-bottom:80px; }
+#brand_story img {transition: all 0.5s;  width:100%; }
+#brand_story a {display: block; overflow: hidden; width: 1200px; height:530px; }
+#brand_story a:hover img {transform:scale(1.2,1.2);  }
+
+#origin {height: 600px;}
+#origin .inner {position: relative;}
+#origin .heart {position: absolute; left:50px; top:0px; width:350px; height: 500px;}
+#origin .origin_txt {position: absolute; right:0; top:0; text-align: center;
+width: 800px;}
+#origin .origin_txt h5 {color:#2b472e; font-size: 50px; font-weight: 700; margin-bottom: 50px; }
+#origin .origin_txt > p {font-size: 20px; line-height: 2.2;}
+
+#join_event {height:360px; background-color:#d1d996;  margin-bottom: 150px; }
+#join_event .inner {position: relative;}
+#join_event h3 {position: absolute; left: 0; top:100px; width:200px; height: 140px;}
+#join_event h3 img {width:100%; }
+#join_event .green { position: absolute; left: 290px; top:100px; font-size: 30px; font-weight: 700; color:#2b472e; }
+#join_event .event_txt { position: absolute; left: 290px; top:160px; font-size: 25px; line-height: 2.0; }
+#join_event .phone { position: absolute; right:50px; top:100px; }
+#join_event .money2000 {animation: money_ani 3s infinite; position: absolute; right:150px; top:170px; z-index: 99; width:150px; }
+#join_event .money2000 img {width:100%; }
+#join_event .money3000 {animation: money_ani2 3s infinite; position: absolute; right:50px; top:130px; z-index: 9; width: 150px;}
+#join_event .money3000 img {width:100%; }
+
+
+#know_how {text-align: center; height: 800px;}
+#know_how h2 {font-size: 50px; color:#666; font-weight: 700; margin-bottom:80px; }
+#know_how .kh_list li {float:left; }
+#know_how .kh_list li p {margin-top: 30px;}
+#know_how .kh_list li a {font-size: 25px; font-weight: 700; color:#666; }
+#know_how .kh_list {margin-bottom: 100px; }
+
+#motto  {height: 1700px;}
+#motto h2 {text-align: center; font-size: 50px; color:#666; font-weight: 700; margin-bottom:80px; }
+#motto > ul > li {float: left; width:calc(100%/2); }
+#motto .m_txt {padding-top:50px;  }
+
+#motto .motto1 > .m_txt {width:500px; height:450px; float:left;}
+#motto .motto1 > .m_photo {float:right; }
+#motto .motto2 > .m_txt {width:500px; height:450px; float:right;}
+#motto .motto2 > .m_photo {float:left; }
+#motto .motto3 > .m_txt {width:500px; height:450px; float:left;}
+#motto .motto3 > .m_photo {float:right; }
+#motto .m_photo img {width:100%; height: 100%;}
+#motto .m_txt h5 {font-size: 25px; font-weight: 700; margin-bottom: 30px; }
+#motto .m_txt > p {font-size: 20px; line-height: 2.0;}
+
+#delivery_event {height:360px; background:#d1d996;  margin-bottom: 150px; }
+#delivery_event .inner {position: relative;}
+#delivery_event h3 {position: absolute; left: 0; top:100px; width:200px; height: 140px;}
+#delivery_event h3 img {width:100%; }
+#delivery_event .green { position: absolute; left: 290px; top:100px; font-size: 30px; font-weight: 700; color:#2b472e; }
+#delivery_event .event_txt { position: absolute; left: 290px; top:160px; font-size: 25px; line-height: 2.0; }
+#delivery_event .free {animation:free_ani 3s infinite; position: absolute; right:0; top:100px; }
+
+
+
+#service { height: 220px; text-align: center; margin: 150px 0 100px;}
+#service h2 {font-size: 50px; color:#666; font-weight: 700; margin-bottom:80px; }
+#service .inner {position: relative;}
+#service .service_list {position: absolute; left:0; top:140px; }
+#service .service_list li {display: inline-block; text-align: left; margin-right:80px; }
+#service .service_list li a {font-weight: 700; font-size: 20px; color:#666; }
+#service  form {position: absolute; right:0; top:130px; display: inline-block; border:3px solid #fff; }
+#service  input[type="text"]{width: 200px; height: 45px; padding: 5px; background: #ddd;  color:#fff;  }
+#service  input[type="submit"]{width: 70px; height: 45px; font-size: 0; background: #ddd url("../images/magnifier.png") no-repeat 10px center; background-size: 50%; cursor: pointer; }
+
+#footer {background: #666; height:300px; color:#333; }
+#footer .inner {position: relative;  }
+#footer h3 {position: absolute; left:0; top:50px; }
+#footer h3 img {width: 150px; }
+#footer address {position: absolute; left:200px; top: 70px; line-height: 2.0;}
+#footer .copy {position: absolute; left:200px; top:140px; }
+#footer .sns {position:absolute; right:0; top:70px; }
+#footer .sns img {width:50px; }
+#footer .sns li {float:left; margin-right: 20px;}
+
+.gotop {position:fixed; right:50px;  bottom:50px; }
+
+
+
+
+
+
+
