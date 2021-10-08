@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>작곡앱 Poper 스타일가이드</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 
@@ -17,10 +18,12 @@
 
         .wrap {
             margin: 0 auto;
+           
+        }
+        video {
+            width: 100%;
 
         }
-
-        .image {}
 
         .image img {
             width: 100%;
@@ -28,20 +31,24 @@
 
         .frame {
             border-radius: 35px;
-            margin-top: -72.1vw;
+            margin-top: -74.5vw;
             box-shadow: outset 10px 10px 10px;
-            margin-left: 14.1%;
-            left: 50%;
-            width: 24.95vw;
+            margin-left: 14%;
+            
+            width: 26vw;
 
             overflow: hidden;
         }
-
-        video {
-            width: 100%;
-opacity: 0.9;
+        .phoneframe {position: absolute;
+            margin-top: -59vw;
+            box-shadow: outset 10px 10px 10px;
+            margin-left: 12%;
+       
+            width: 30vw; 
         }
-
+        .phoneframe img {width:100%;         
+        }
+ 
     </style>
 </head>
 
@@ -51,6 +58,9 @@ opacity: 0.9;
 
         <div class="frame">
             <video src="images/poper-video1.mp4" autoplay muted loop></video>
+        </div>
+        <div class="phoneframe">
+             <img src="images/phoneframe.png" alt="폰 프레임 이미지">
         </div>
         
     </div>
