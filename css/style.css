@@ -391,12 +391,11 @@ h1, h2, h3, h4, h5, h6 {
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
   background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #52d3aa));
-  background-image: url("../images/my\ view.jpg") no-repeat center center;
-  /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
-  /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
+ /* Android 2.3 */
+ background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
+ /* IE10+ */
+ background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
+ background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
 }
 #fh5co-home, #fh5co-home .text-wrap {
   height: 900px;
@@ -1408,10 +1407,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+@keyframes rotate_ani {
+  0% {transform: rotate(0deg); opacity: 0;}
+  20% {transform:rotate(35deg); opacity: 1;}
+  50% {transform:rotate(-35deg); }
+  75% {transform:scale(1.2); opacity: 1;}
+  100% {transform:scale(0.5); opacity: 0; }
+
+}
+
+
 .fh5co-text {align-items: center;}
 .logo1 {width:100%;   }
 .logo1 img {width: 100%;}
-.navbar-brand img {width:32%; }
+.navbar-brand img {width:32%; animation: rotate_ani 10s infinite; }
 
 .gradient {background: url("../images/my\ view.jpg")no-repeat center center;}
 

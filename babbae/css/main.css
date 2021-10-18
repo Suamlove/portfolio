@@ -17,7 +17,7 @@
             100% {transform:translate(55px,-100px); opacity:0; }
             }
 
-body {font-family: 'Noto Sans KR', sans-serif; color:#666;}
+body {width:100%; margin:0 auto;  font-family: 'Noto Sans KR', sans-serif; color:#666;}
 
 #header {height:160px; position: relative; }
 
